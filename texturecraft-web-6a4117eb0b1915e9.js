@@ -742,6 +742,10 @@ function __wbg_get_imports() {
         __wbg_end_b57473834b877409: function(arg0) {
             arg0.end();
         },
+        __wbg_error_8c8dff942c7c4f11: function(arg0) {
+            const ret = arg0.error;
+            return ret;
+        },
         __wbg_error_8f639d3fdf91a023: function(arg0, arg1) {
             let deferred0_0;
             let deferred0_1;
@@ -2282,6 +2286,9 @@ function __wbg_get_imports() {
         __wbg_set_onload_a85e3f5ed3002dde: function(arg0, arg1) {
             arg0.onload = arg1;
         },
+        __wbg_set_onuncapturederror_bb813f1102da2296: function(arg0, arg1) {
+            arg0.onuncapturederror = arg1;
+        },
         __wbg_set_operation_00a77386523b88f9: function(arg0, arg1) {
             arg0.operation = __wbindgen_enum_GpuBlendOperation[arg1];
         },
@@ -2326,6 +2333,9 @@ function __wbg_get_imports() {
         },
         __wbg_set_resource_gpu_texture_view_4cffe7bc7c8e5cbe: function(arg0, arg1) {
             arg0.resource = arg1;
+        },
+        __wbg_set_returnValue_60eab0a05ea68fbc: function(arg0, arg1, arg2) {
+            arg0.returnValue = getStringFromWasm0(arg1, arg2);
         },
         __wbg_set_rows_per_image_c6d50d227e634379: function(arg0, arg1) {
             arg0.rowsPerImage = arg1 >>> 0;
@@ -2819,6 +2829,10 @@ function __wbg_get_imports() {
             getDataViewMemory0().setInt32(arg0 + 4 * 1, len1, true);
             getDataViewMemory0().setInt32(arg0 + 4 * 0, ptr1, true);
         }, arguments); },
+        __wbg_valueOf_02fd4d101b7553c7: function(arg0) {
+            const ret = arg0.valueOf();
+            return ret;
+        },
         __wbg_value_05305a761dfa3e0e: function(arg0, arg1) {
             const ret = arg1.value;
             const ptr1 = passStringToWasm0(ret, wasm.__wbindgen_malloc, wasm.__wbindgen_realloc);
@@ -2877,91 +2891,101 @@ function __wbg_get_imports() {
             return ret;
         },
         __wbindgen_generic_0000000000000001: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [Externref], shim_idx: 513, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [Externref], shim_idx: 518, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_);
             return ret;
         },
         __wbindgen_generic_0000000000000002: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("Array<any>")], shim_idx: 6, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("Array<any>")], shim_idx: 2, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true_);
             return ret;
         },
         __wbindgen_generic_0000000000000003: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("Event")], shim_idx: 6, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("BeforeUnloadEvent")], shim_idx: 2, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__3);
             return ret;
         },
         __wbindgen_generic_0000000000000004: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("GPUDevice")], shim_idx: 513, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__4);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("Event")], shim_idx: 2, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__4);
             return ret;
         },
         __wbindgen_generic_0000000000000005: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("KeyboardEvent")], shim_idx: 6, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__5);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("GPUDevice")], shim_idx: 518, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__5);
             return ret;
         },
         __wbindgen_generic_0000000000000006: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("any")], shim_idx: 513, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__6);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("GPUUncapturedErrorEvent")], shim_idx: 2, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__6);
             return ret;
         },
         __wbindgen_generic_0000000000000007: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("undefined")], shim_idx: 513, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__7);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("KeyboardEvent")], shim_idx: 2, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__7);
             return ret;
         },
         __wbindgen_generic_0000000000000008: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [], shim_idx: 127, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
-            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke_______true_);
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("any")], shim_idx: 518, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__8);
             return ret;
         },
         __wbindgen_generic_0000000000000009: function(arg0, arg1) {
-            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [], shim_idx: 186, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [NamedExternref("undefined")], shim_idx: 518, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__9);
+            return ret;
+        },
+        __wbindgen_generic_000000000000000a: function(arg0, arg1) {
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [], shim_idx: 129, ret: Unit, inner_ret: Some(Unit) }, mutable: true }) -> Externref`.
+            const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke_______true_);
+            return ret;
+        },
+        __wbindgen_generic_000000000000000b: function(arg0, arg1) {
+            // Cast intrinsic for `Closure(Closure { owned: true, function: Function { arguments: [], shim_idx: 191, ret: Result(Unit), inner_ret: Some(Result(Unit)) }, mutable: true }) -> Externref`.
             const ret = makeMutClosure(arg0, arg1, wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsValue___true_);
             return ret;
         },
-        __wbindgen_generic_000000000000000a: function(arg0) {
+        __wbindgen_generic_000000000000000c: function(arg0) {
             // Cast intrinsic for `F64 -> Externref`.
             const ret = arg0;
             return ret;
         },
-        __wbindgen_generic_000000000000000b: function(arg0, arg1) {
+        __wbindgen_generic_000000000000000d: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(F32)) -> NamedExternref("Float32Array")`.
             const ret = getArrayF32FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_000000000000000c: function(arg0, arg1) {
+        __wbindgen_generic_000000000000000e: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(I16)) -> NamedExternref("Int16Array")`.
             const ret = getArrayI16FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_000000000000000d: function(arg0, arg1) {
+        __wbindgen_generic_000000000000000f: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(I32)) -> NamedExternref("Int32Array")`.
             const ret = getArrayI32FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_000000000000000e: function(arg0, arg1) {
+        __wbindgen_generic_0000000000000010: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(I8)) -> NamedExternref("Int8Array")`.
             const ret = getArrayI8FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_000000000000000f: function(arg0, arg1) {
+        __wbindgen_generic_0000000000000011: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(U16)) -> NamedExternref("Uint16Array")`.
             const ret = getArrayU16FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_0000000000000010: function(arg0, arg1) {
+        __wbindgen_generic_0000000000000012: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(U32)) -> NamedExternref("Uint32Array")`.
             const ret = getArrayU32FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_0000000000000011: function(arg0, arg1) {
+        __wbindgen_generic_0000000000000013: function(arg0, arg1) {
             // Cast intrinsic for `Ref(Slice(U8)) -> NamedExternref("Uint8Array")`.
             const ret = getArrayU8FromWasm0(arg0, arg1);
             return ret;
         },
-        __wbindgen_generic_0000000000000012: function(arg0, arg1) {
+        __wbindgen_generic_0000000000000014: function(arg0, arg1) {
             // Cast intrinsic for `Ref(String) -> Externref`.
             const ret = getStringFromWasm0(arg0, arg1);
             return ret;
@@ -3003,33 +3027,41 @@ function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_3
     wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__3(arg0, arg1, arg2);
 }
 
-function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__5(arg0, arg1, arg2) {
-    wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__5(arg0, arg1, arg2);
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__4(arg0, arg1, arg2) {
+    wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__4(arg0, arg1, arg2);
 }
 
-function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_(arg0, arg1, arg2) {
-    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_(arg0, arg1, arg2);
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__6(arg0, arg1, arg2) {
+    wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__6(arg0, arg1, arg2);
+}
+
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__7(arg0, arg1, arg2) {
+    wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___js_sys_35fc7b78b4f6d68___Array______true__7(arg0, arg1, arg2);
+}
+
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_(arg0, arg1, arg2) {
+    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true_(arg0, arg1, arg2);
     if (ret[1]) {
         throw takeFromExternrefTable0(ret[0]);
     }
 }
 
-function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__4(arg0, arg1, arg2) {
-    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__4(arg0, arg1, arg2);
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__5(arg0, arg1, arg2) {
+    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__5(arg0, arg1, arg2);
     if (ret[1]) {
         throw takeFromExternrefTable0(ret[0]);
     }
 }
 
-function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__6(arg0, arg1, arg2) {
-    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__6(arg0, arg1, arg2);
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__8(arg0, arg1, arg2) {
+    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__8(arg0, arg1, arg2);
     if (ret[1]) {
         throw takeFromExternrefTable0(ret[0]);
     }
 }
 
-function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__7(arg0, arg1, arg2) {
-    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_4aa7af548158c24b___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__7(arg0, arg1, arg2);
+function wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__9(arg0, arg1, arg2) {
+    const ret = wasm.wasm_bindgen_bea670c6ba40a3ac___convert__closures_____invoke___wasm_bindgen_bea670c6ba40a3ac___sys__JsNullable_wgpu_7ea5acbd4d2671b2___backend__webgpu__webgpu_sys__gen_GpuError__GpuError___core_37ee0ce0c4cd57d5___result__Result_____wasm_bindgen_bea670c6ba40a3ac___JsError___true__9(arg0, arg1, arg2);
     if (ret[1]) {
         throw takeFromExternrefTable0(ret[0]);
     }
